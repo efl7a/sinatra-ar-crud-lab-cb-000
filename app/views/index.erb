@@ -1,5 +1,7 @@
 <h1>Your Posts</h1>
+<ol>
 <% @posts.each do |post| %>
-  <h3><%= "#{post.post_name}" %></h3>
-  <p><%= post.post_content %></p>
+  <li><h3><%= post.name %></h3></li>
+  <p><%= post.content %></p>
 <% end %>
+</ol>
